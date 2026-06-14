@@ -1,0 +1,47 @@
+<head>
+    <script type="module" src="main.js"></script>
+    <style>
+        .positive {
+            color: green;
+        }
+
+        .negative {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>
+            Your crypto portfolio.
+        </caption>
+        <!--Asset, Amount, Buy Price, Current Value, Gain/Loss, % Portfolio.-->
+        <thead>
+            <tr>
+                <th scope="col">Asset</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Buy Price</th>
+                <th scope="col">Current Value</th>
+                <th scope="col">Gain/Loss</th>
+                <th scope="col">% Portfolio</th>
+            </tr>
+        </thead>
+        <tbody id="assets_table">
+
+        </tbody>
+    </table>
+    <div id="total_value"></div>
+
+    <form id="form_new_asset">
+        <div>
+            Name <input id="name" type="text" />
+            Amount <input id="quantity" type="number" />
+            Buy Price <input id="buyPrice" type="number" />
+        </div>
+        <div>
+            <button id="add_new_asset" type="submit">Add Asset</button>
+        </div>
+        <div id="error_message"></div>
+    </form>
+</body>
