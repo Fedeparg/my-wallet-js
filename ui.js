@@ -12,7 +12,6 @@ export function render(wallet, prices, onRemove) {
         <td>${formatEur(prices[a.name])}</td>
         <td class='${(earnings >= 0) ? "positive" : "negative"}'>${formatEur(earnings)}</td>
         <td>${formatPct(distribution[a.name])}</td>
-        <td>${formatPct(distribution[a.name])}</td>
         <td><button type="button" data-name=${a.name}>Remove</button></td>
         </tr>`
     });
